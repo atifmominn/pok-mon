@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokémon Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="div">
+      <img style="vertical-align: middle;" width="70" src="https://www.pngitem.com/pimgs/m/483-4839871_pokeball-pixel-png-transparent-png.png" alt="pokeball"/>
+      <h1 id="title">Pokémon Survey</h1>
+      <img style="vertical-align: middle;" width="70" src="https://www.pngitem.com/pimgs/m/483-4839871_pokeball-pixel-png-transparent-png.png" alt="pokeball"/>
+    </div>
+    <p id="description">please help us fill out this survey on your path to becoming a pokémon master!</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label">name:  
+          <input class="text" type="text" id="name" required placeholder="ex. ash ketchum"/>
+        </label>
+        <label id="email-label">email: 
+          <input class="text" type="email" id="email" required placeholder="ex. ash.ketchum@pokemail.com"/>
+        </label>
+        <label id="number-label">age:
+          <input class="text" type="number" id="number" min="13" max="87" placeholder="ex. 15 years old"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>experience level: 
+          <select class="text" id="dropdown">
+            <option>(select one)</option>
+            <option>beginner</option>
+            <option>intermediate</option>
+            <option>advanced</option>
+            <option>expert</option>
+          </select>
+        </label>
+      <div class="inline">
+        <label class="full prefer">preferred starter pokémon</label> 
+            <label class="full"><input class="radio" type="radio" name="starter-pokemon" value="char"/> charmander</label>
+            <label class="full"><input type="radio" name="starter-pokemon" value="squir"/> squirtle</label>
+            <label class="full"><input type="radio" name="starter-pokemon" value="bulb"/> bulbasaur</label> 
+      </div>
+      <div class="inline region">
+        <img class="yo" style="vertical-align: middle;" width="300" height="90" src="https://preview.redd.it/bv8ws11eo1h31.jpg?auto=webp&s=4947a0972a8ad7b07b55de3f19762b59c33217e2" alt="starter pokemon"/>
+      </div>
+      </fieldset>
+      <fieldset> 
+        <div class="inline"> 
+          <label class="full">select all regions you'd like to enter</label>
+          <label class="full">
+            <input type="checkbox" value="kanto"> <label>kanto</label>
+          </label>
+        
+          <label class="full">
+            <input type="checkbox" value="johto"> <label>johto</label>
+          </label>
+
+          <label class="full">
+            <input type="checkbox" value="hoenn"> <label>hoenn</label>
+          </label>
+
+          <label class="full">
+            <input type="checkbox" value="sinnoh"><label class="push">sinnoh<label>
+          </label>
+
+          <label class="full">
+            <input type="checkbox" value="unova"> <label>unova</label>
+          </label>
+
+          <label class="full">
+            <input type="checkbox" value="kalos"> <label>kalos</label>
+          </label>
+
+          <label class="full">
+            <input type="checkbox" value="alola"> <label>alola</label>
+          </label>
+
+          <label>
+            <input type="checkbox" value="galar"> <label>galar</label>
+          </label>  
+        </div>
+        <div class="inline region">
+          <img class="hehe" style="vertical-align: middle;" width="300" src="https://preview.redd.it/3jrdsw149br21.png?width=960&crop=smart&auto=webp&s=abba63e87de346df8b30a0f469b44c3b826bf20c" alt="worldmap"/>
+        </div>     
+      </fieldset>
+      <fieldset> 
+        <label class="full">please provide a short bio:</label> 
+          <textarea rows="5" cols="52" placeholder="ex. i love long walks on the beach with misty"></textarea>
+      </fieldset>
+      <input  type="submit" id="submit"/>
+
+    </form>
+  </body>
+</html>
